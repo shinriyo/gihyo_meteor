@@ -1,4 +1,11 @@
+# gihyo_meteor
+
 ```
 curl install.meteor.com | /bin/sh
 ```
-# gihyo_meteor
+
+## これはなぜか出来ない
+
+```
+meteor create --example wordplay
+```
