@@ -21,3 +21,7 @@ http://localhost:3000
 ```
 meteor update
 ```
+
+## これ見て直す
+
+http://qiita.com/tadfmac/items/a63bb85e5cfb12bbbfc8#comment-c21177df177beb793f50
