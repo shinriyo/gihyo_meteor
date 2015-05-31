@@ -16,3 +16,8 @@ $ meteor
 ```
 
 http://localhost:3000
+
+古いので
+```
+meteor update
+```
