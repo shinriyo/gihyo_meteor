@@ -9,3 +9,8 @@ curl install.meteor.com | /bin/sh
 ```
 meteor create --example wordplay
 ```
+
+```
+$ cd hello # helloディレクトリに移動
+$ meteor
+```
