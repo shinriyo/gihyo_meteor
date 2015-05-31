@@ -1,0 +1,34 @@
+<head>
+  <title>sample5-1</title>
+</head>
+
+<body>
+  {{> simpleVar}}
+  {{> nestedVar}}
+  {{> parentVar}}
+</body>
+
+<template name="simpleVar">
+  <section>
+    <h1>単純な変数参照</h1>
+    {{personName}}さん、こんにちは！
+  </section>
+</template>
+<template name="nestedVar">
+  <section>
+    <h1>入れ子の変数参照</h1>
+    {{person.name}}さん、こんにちは！
+  </section>
+</template>
+<template name="parentVar">
+  <section>
+    <h1>「親」となる変数の参照</h1>
+    {{#with family}}
+      {{#with mother}}
+        お母さんの名前は{{name}}です。
+        <!-- ../により、family変数を参照できる -->
+        お父さんの名前は{{../father.name}}です。
+      {{/with}}
+    {{/with}}    
+  </section>
+</template>
