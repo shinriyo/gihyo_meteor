@@ -14,3 +14,5 @@ meteor create --example wordplay
 $ cd hello # helloディレクトリに移動
 $ meteor
 ```
+
+http://localhost:3000
