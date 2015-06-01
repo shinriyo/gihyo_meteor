@@ -1,0 +1,46 @@
+<head>
+  <title>サンプル8-1</title>
+</head>
+
+<body>
+  {{> form}}
+  <hr>
+  {{> employeeList}}
+</body>
+
+<template name="form">
+  <form>
+    <div>
+      <label for="name">名前</label>
+      <input id="name">
+      <label for="age">年齢</label>
+      <input id="age" type="number">
+      <input type="hidden" id="selectedEmployeeId">
+    </div>
+    <input type="button" id="addButton" value="追加">
+    <input type="button" id="updateButton" value="更新">
+  </form>
+</template>
+
+<template name="employeeList">
+  <input type="button" id="removeButton" value="削除">
+  <table id="employeeList">
+    <thead>
+      <tr>
+        <th><input type="checkbox" id="toggleAll"></th>
+        <th>名前</th>
+        <th>年齢</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- employeesの値をループして一覧を生成 -->
+      {{#each employees}}
+      <tr>
+        <td><input type="checkbox" name="selectedEmployees" value="{{_id}}"></td>
+        <td>{{name}}</td>
+        <td>{{age}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>
