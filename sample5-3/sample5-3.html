@@ -1,0 +1,17 @@
+<head>
+  <title>sample5-3</title>
+</head>
+
+<body>
+  {{> currentTime}}
+</body>
+
+<template name="currentTime">
+  現在時刻は
+  {{#if oddSeconds}}
+    <span style="color: green;">{{dateString}}</span>
+  {{else}}
+    <span>{{dateString}}</span>
+  {{/if}}
+    です。
+</template>
