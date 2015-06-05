@@ -25,3 +25,10 @@ meteor update
 ## これ見て直す
 
 http://qiita.com/tadfmac/items/a63bb85e5cfb12bbbfc8#comment-c21177df177beb793f50
+
+
+# 動かない
+```
+cd sample4-2
+meteor
+```
